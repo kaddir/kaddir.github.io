@@ -1,0 +1,57 @@
+@media only screen and (max-width:1230px) and (min-width:990px) {
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+@media only screen and (max-width: 479px) {
+}
+@font-face {
+font-family:'Helvetica Now Text';
+src:url('/web/20220119162548im_/https://cyka.ml/HelveticaNowText-Light.ttf')
+}
+body {
+font-family:'Helvetica Now Text';
+background-color:#15202B;
+color:#1DA1F2
+}
+.pp {
+background:transparent;
+padding:4px;
+border:2px solid #1DA1F2;
+border-radius:1000px
+}
+.button {
+display:inline-block;
+border-radius:50px;
+background-color:#15202B;
+border:1px solid #1DA1F2;
+color:#FFFFFF;
+text-align:center;
+font-size:13px;
+padding:0px;
+width:150px;
+height:50px;
+transition:all 0.5s;
+cursor:pointer;
+margin:5px;
+}
+.button span {
+cursor:pointer;
+display:inline-block;
+position:relative;
+transition:0.5s;
+}
+.button span:after {
+  content:'\00bb';
+  position:absolute;
+  opacity:0;
+top:0;
+right:-20px;
+transition:0.5s;
+}
+.button:hover span {
+padding-right:25px;
+}
+.button:hover span:after {
+opacity:1;
+right:0;
+}
